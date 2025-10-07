@@ -71,6 +71,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+<meta name="google-site-verification" content="gnKx-6jipzYeiqCX2ZCSt76ltjzsJ_lvYxm4KcBa1kE" />
+
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -87,7 +92,10 @@ export default function RootLayout({
         />
 
         <Nav />
+        <main>
         {children}
+        </main>
+
         <Footer />
       </body>
     </html>
