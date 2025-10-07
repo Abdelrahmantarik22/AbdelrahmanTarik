@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+export const dynamic = "force-static";
+
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import ScrollRevealWrapper from './ScrollRevel';
 export default function About() {
@@ -26,6 +28,7 @@ export default function About() {
                 alt="Abdo photo"
                 width={100}
                 height={100}
+                loading='lazy'
                 className="  w-full h-full   drop-shadow-lg group-hover:drop-shadow-gray-400  transition-all duration-500  "
               />
             </div>

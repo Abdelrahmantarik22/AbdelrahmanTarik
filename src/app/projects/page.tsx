@@ -1,5 +1,6 @@
 import React from 'react'
 import {client} from '../lib/sanity'
+export const dynamic = "force-static";
 import {allProjectsQuery} from '../lib/queries'
 import Image from 'next/image'
 import {Root} from '../interface/project.schema'
@@ -34,6 +35,7 @@ export default async function Projects() {
                     alt={`${project.title}`}
                     width={100}
                     height={100}
+                    loading='lazy'
                     className="w-full h-[180px] rounded-lg"
                   />
                   <h3 className="w-full font-bold text-xl">{project.title}</h3>
