@@ -28,12 +28,21 @@ export async function POST(req: Request) {
       },
     });
 
-    await transporter.sendMail({
-      from: email,
-      to: process.env.SMTP_USER,
-      subject: `Message from ${name}: ${subject}`,
-      text: message,
+      await transporter.sendMail({
+      from: `"Portfolio Contact" <${process.env.SMTP_USER}>`, 
+      to: process.env.SMTP_USER, 
+      subject: `📩 New Message from ${name} — ${subject}`,
+      text: `
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+      `,
+      replyTo: email, 
     });
+
 
     return NextResponse.json({ success: true });
   } catch (error) {
