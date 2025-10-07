@@ -3,8 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./_component/Nav";
 import Footer from "./_component/Footer";
-  import { ToastContainer } from 'react-toastify';
-
+import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +16,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AbdelrahmanTarik",
-  description: "Abdelrahman Tarik — Front-End Developer specializing in React and Next.js. I build modern, fast, and responsive web applications with clean UI and great user experience. Explore my projects and skills.",
+  title: "Abdelrahman Tarik | Front-End Developer",
+  description:
+    "Abdelrahman Tarik — Front-End Developer specializing in React and Next.js. I build modern, fast, and responsive web applications with clean UI and great user experience. Explore my projects and skills.",
+  keywords: [
+    "Abdelrahman Tarik",
+    "Front-End Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Web Developer",
+    "Portfolio",
+    "UI Developer",
+  ],
+  authors: [{ name: "Abdelrahman Tarik" }],
+  metadataBase: new URL("https://yourdomain.com"), 
+  openGraph: {
+    title: "Abdelrahman Tarik | Front-End Developer",
+    description:
+      "React & Next.js developer creating fast, modern, and responsive web applications.",
+    url: "https://yourdomain.com",
+    siteName: "Abdelrahman Tarik Portfolio",
+    images: [
+      {
+        url: "/preview.png", 
+        width: 1200,
+        height: 630,
+        alt: "Abdelrahman Tarik Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdelrahman Tarik | Front-End Developer",
+    description:
+      "React & Next.js developer creating modern, responsive web applications.",
+    images: ["/preview.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,28 +69,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-<ToastContainer
-  position="top-center"
-  autoClose={3000}
-  hideProgressBar={false}
-  newestOnTop={false}
-  closeOnClick
-  rtl={false}
-  pauseOnFocusLoss
-  draggable
-  pauseOnHover
-/>
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
 
-        <Nav/>
+        <Nav />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
