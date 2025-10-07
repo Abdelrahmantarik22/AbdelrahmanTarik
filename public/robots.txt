@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdelrahman-tarik-d1je.vercel.app/sitemap.xml
