@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     "UI Developer",
   ],
   authors: [{ name: "Abdelrahman Tarik" }],
-  metadataBase: new URL("https://yourdomain.com"), 
+  metadataBase: new URL("https://abdelrahman-tarik-d1je.vercel.app/"), 
   openGraph: {
     title: "Abdelrahman Tarik | Front-End Developer",
     description:
       "React & Next.js developer creating fast, modern, and responsive web applications.",
-    url: "https://yourdomain.com",
+    url: "https://abdelrahman-tarik-d1je.vercel.app/",
     siteName: "Abdelrahman Tarik Portfolio",
     images: [
       {
