@@ -5,10 +5,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
 
+
+
+
+
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
 
 .font-main{
   font-family: "Nerko One", cursive;

@@ -46,7 +46,7 @@ export default function About() {
                 help businesses grow online.
               </p>
             </div>
-                  <button type="button" className="text-black  font-medium border border-gray-500 hover:bg-[#00bdc1] hover:text-white transition-all duration-500 cursor-pointer rounded-lg text-sm px-4 py-2   dark:text-white dark:hover:bg-[#00bdc1] dark:hover:text-white "> <a href="/AbdelrahmanTarikSaid.pdf" className='flex gap-2 items-center ' download>Download CV <FaCloudDownloadAlt/></a> </button>
+                  <button type="button" className="text-black  font-medium border border-gray-500 hover:bg-[#00bdc1] hover:text-white transition-all duration-500 cursor-pointer rounded-lg text-sm px-4 py-2   dark:text-white dark:hover:bg-[#00bdc1] dark:hover:text-white "> <a href="/AbdelrahmanTarik.pdf" className='flex gap-2 items-center ' download>Download CV <FaCloudDownloadAlt/></a> </button>
 
           </div>
         </div>

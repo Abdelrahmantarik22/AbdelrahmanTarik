@@ -81,7 +81,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className=" fixed  w-full  z-20 shadow-white/20 top-0 start-0  shadow-lg backdrop-blur-md border  pr-3  dark:shadow-gray-700">
+    <nav className=" fixed  w-full  z-20 shadow-white/20 top-0 start-0  shadow-lg backdrop-blur-md border    dark:shadow-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button
           onClick={() => {

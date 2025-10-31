@@ -7,11 +7,11 @@ export default function Hero() {
 
 
   return (
-    <section id='Home' className='h-auto  w-full  dark:bg-gradient-to-b dark:from-black dark:via-[#00bcd1]/20 dark:to-gray-950  py-12   bg-gradient-to-b from-gray-300 via-[#00bcd1]/50 to-gray-300'>
+    <section id='Home' className='h-auto    dark:bg-gradient-to-b dark:from-black dark:via-[#00bcd1]/20 dark:to-gray-950  py-12   bg-gradient-to-b from-gray-300 via-[#00bcd1]/50 to-gray-300'>
       <div className="container mx-auto">
     <div className=' flex sm:flex-row flex-col  '>
 
-<div className='md:w-1/2 w-full pl-10 md:pl-0  flex md:justify-cente items-center mt-7 md:mt-0 order-2'>
+<div className='md:w-1/2 w-full pl-10 md:pl-0  flex md:justify-center items-center mt-7 md:mt-0 order-2'>
 <div className='flex flex-col gap-3 '>
 <span className=' text-lg md:text-3xl md:mb-1 block '>{`Hey I'am `}</span>
 <h1 className='font-[900] md:text-5xl text-2xl scale-y-150 tracking-wide'>Abdelrahman Tarik</h1>
