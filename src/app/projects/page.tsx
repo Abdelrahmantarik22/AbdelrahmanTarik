@@ -1,6 +1,6 @@
 import React from 'react'
 import {client} from '../lib/sanity'
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 import {allProjectsQuery} from '../lib/queries'
 import Image from 'next/image'
 import {Root} from '../interface/project.schema'
